@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+<style>
+    .header{
+        background: rgb(58,58,58);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    body{
+        padding-top: 10px;
+        
+    }
+    .form-container{
+      border-radius: 10px;
+
+      padding: 40px;
+      box-shadow: 0px 10px 0px 0px;
+      height: 350px;
+      
+      
+      background: whitesmoke;
+    }
+   
+    
+</style>
+</head>
+<body>
+  
+    <div class="container-fluid">
+      
+      <div class="header" class="nav nav-tabs">
+        <ul class="nav justify-content-end" class="nav nav-tabs" style="padding-top: 25px;">
+            <li class="nav-item">
+                <a class="nav-link" href="localstorage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signup1.html">Signup</a>
+              </li>
+        </ul>
+    </div>
+  
+    
+       <div style="padding-top: 40px;">
+        <section class="container-fluid">
+          <section class="row justify-content-center">
+            <section class="col-lg-4 m-auto d-block">
+             
+              <form class="form-container" action="localstorage.html">
+                <h3 class="text-center">User Login</h3>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email">
+               </div>
+               <div class="form-group">
+               <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+              </div>
+              <div class="form-group form-check">
+                
+                <label style="padding-top: 0px;">
+                  <input type="checkbox">
+                  Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary" onclick="check()">Login</button>
+              <br>
+              <div style="padding-top: 10px;">
+              <a href="#">Forget Password?</a>
+              </div>
+              <span id="result" class="text-danger"> </span>
+              
+              </form>
+              
+            </section>
+          </section>
+        </section>
+        <footer></footer>
+      </div>
+    </div>
+    
+    <script type="text/javascript" language="javascript" src="login.js"></script>
+    
+    
+</body>
+</html>

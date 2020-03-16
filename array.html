@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript Array</h2>
+        <p id="demo"></p>
+        <h2>Javascript forEach() Array</h2>
+        <p id="demo1"></p>
+        <h2>Javascript splice</h2>
+        <button onclick="myFunction()">Click Here</button>
+        <p id="demo0"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+       
+        <script>
+            var car,txt, clen, i;
+            var car=["ford","nano","audi"];
+            clen=car.length;
+            txt="<ul>";
+                for(i=0;i<clen;i++)
+                {
+                    txt += "<li>" + car[i] + "</li>";
+                }
+                txt += "</ul>";
+                    document.getElementById("demo").innerHTML=txt;
+        </script>
+         <script>
+            var car,txt;
+            var car=["ford","nano","audi"];
+            txt="<ul>";
+                car.forEach(myFunction);
+                txt +="<ul>";
+                    document.getElementById("demo1").innerHTML=txt;
+                    function myFunction(value){
+                        txt += "<li>" + value + "</li>";
+                    }
+                </script>
+                 <script>
+                    var cars=["ford","nano","audi"];
+                    document.getElementById("demo0").innerHTML= "original array:<br> "+ cars;
+                    function myFunction()
+                    {
+                       var removed= cars.splice(2,0,"marurti","hexa");
+                       document.getElementById("demo2").innerHTML="new array:<br>" + cars;
+                       document.getElementById("demo3".innerHTML= "removed items: <br>" + removed);
+        
+                    }
+                    
+        </script>
+               
+    </body>
+</html>

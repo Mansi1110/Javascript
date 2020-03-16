@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styling.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+      input[type="text"]
+      {
+        position: relative;
+        height: 40px;
+        width: 150px;
+        background: #fff;
+       
+        left: 22%;
+        transform: translateX(-50%);
+        color: royalblue;
+        outline: none;
+        font-size: 35px;
+        
+      }
+      input[type="button"]
+      {
+        
+        height: 25px;
+        font-size: small;
+      }
+
+  </style>
+
+</head>
+<script type="text/javascript">
+function check()
+{
+    let pass,user,em,s1,s2;
+    pass = document.getElementById("exampleInputPassword").value;
+    em = document.getElementById("exampleInputEmail").value;
+    s1 = document.getElementById('mainCaptcha').value;
+    s2 = document.getElementById('txtInput').value;
+    // alert(pass);
+    // alert(em);
+     user = JSON.parse(localStorage.getItem(em));
+        //alert(user.password1);
+ if(user)
+    {
+     if(user.password1 == pass)
+     { 
+       if (s1 == s2)
+        {
+         document.getElementById('success').innerHTML = "Form is validated Successfully";
+         //alert("Form is validated Successfully");
+         alert("Login successfully");
+         document.getElementById('userdiv').style.display = "none";
+         document.getElementById('boxdiv').style.display = "none";
+         document.getElementById('displaydiv').style.display = "block";
+         document.getElementById('div0').innerHTML="User Details"
+         document.getElementById('div1').innerHTML= "First Name: " + user.fname;
+         document.getElementById('div2').innerHTML= "Last Name: " + user.lname;
+         document.getElementById('div3').innerHTML= "Email Address: " + user.email1;
+         document.getElementById('div4').innerHTML= "Phone Number: " + user.number1;
+         }
+          else
+          {       
+             document.getElementById('error').innerHTML = "Please enter a valid captcha."; 
+            return false;
+          }
+          }
+        else 
+        {
+        alert("wrong password");
+        }
+        }
+        else
+        {
+            alert("wrong email");
+        }
+}
+function generateCaptcha()
+         {
+             var n = new Array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','1','2','3','4','5','6','7','8','9','0');
+             var i;
+             for (i=0;i<4;i++){
+               var a = n[Math.floor(Math.random() * n.length)];
+               var b = n[Math.floor(Math.random() * n.length)];
+               var c = n[Math.floor(Math.random() * n.length)];
+               var d = n[Math.floor(Math.random() * n.length)];
+              }
+            var cap = a + '' + b + '' + '' + c + '' + d;
+            document.getElementById("mainCaptcha").value = cap
+          }
+</script>
+<body onload="generateCaptcha()">
+   
+    <div id="displaydiv">
+        <h2 id="div0"></h2>
+         <p id="div1" style="padding-top: 10px;"></p>
+         <p id="div2"></p>
+         <p id="div3"></p>
+         <p id="div3"></p>
+         <p id="div4"></p>
+    </div>
+
+<div id="boxdiv">
+    <div class="container-fluid">
+        <div style="padding-top: 40px;">
+            
+            <section class="container-fluid">
+              <section class="row justify-content-center">
+                <section class="col-lg-4 m-auto d-block">
+                 <form class="form-container" style="height: 450px;">
+                    <div id="userdiv">
+                    <h3 class="text-center">Login</h3>
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                     <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password" required>
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                               <td>
+                               </td>
+                            </tr>
+                            <tr>
+                               <td style="padding-left: 30px;">
+                                  <input type="text" id="mainCaptcha" style="padding-left: 20px;" readonly="readonly"/>                    
+                                  <input type="button" id="refresh" value="Refresh" onclick="generateCaptcha();" />
+                               </td>
+                            </tr>
+                            <tr>
+                               <td style="padding-left: 30px; padding-top: 10px;">
+                                  <input type="text" id="txtInput"/> 
+                                    
+                               </td>
+                            </tr>
+                            <tr>
+                               <td><span id="error" style="color:red"></span></td>
+                            </tr>
+                            <tr>
+                               <td><span id="success" style="color:green"></span></td>
+                            </tr>
+                         </table>
+                    </div>
+                        <button type="submit" class="btn btn-primary" value="click" onclick="check(); return false" >Login</button>
+                        <br>
+                        <div style="padding-top: 20px;">
+                            <p> Not SignUp?<a href="signup.html">Signup</a></p>
+                         </div>
+                        </div>
+                     </form>
+                    
+                </section>
+             </section>
+          </section>
+     </div>
+     </div>
+    </div>
+</body>
+</html>

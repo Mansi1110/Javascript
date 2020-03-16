@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript object</h2>
+        <p id="demo"></p>
+        
+        <script>
+            var car = {
+                type:"ford",
+                 color:"red",
+                 carno:8999,
+                 fullname: function(){
+                     return this.type + " " + this.color;
+                 }
+            };
+            document.getElementById("demo").innerHTML=car.fullname();
+        
+
+        </script>
+    </body>
+</html>

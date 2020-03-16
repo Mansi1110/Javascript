@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ <style>
+     li a {
+            font-family: normal;
+            color: grey;
+            font-size: small;
+             }
+             .corner{
+              border-bottom: 10px;
+          }
+          .padding{
+            padding-right: 375px;
+            padding-left: 15px;
+            color: grey;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <ul class="nav nav-tabs">
+        <p class="text-right"></p>
+        <ul class="nav justify-content-end" class="nav nav-tabs" style="padding-top: 15px;">
+        <div class="row">
+            
+                <div class="padding">
+                    <h4>Test<strong style="color: black;">Fairy</strong></h4>
+                 </div>
+                 <div class="row">
+            <div class="col-sm-2">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">FEATURES</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Link 1</a>
+                      <a class="dropdown-item" href="#">Link 2</a>
+                      <a class="dropdown-item" href="#">Link 3</a></div>
+                  </li>
+            </div>
+            <div class="col-sm-2" >
+                <li class="nav-item">
+                    <a class="nav-link" href="#">DEMO</a>
+                  </li>
+            </div>
+            <div class="col-sm-2">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">EDU</a>
+                  </li>
+            </div> 
+            <div class="col-sm-2">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CASESTUDIES</a>
+                  </li>
+            </div> 
+            <div class="col-sm-2" >
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT US</a>
+                  </li>
+            </div>
+            <div class="col-sm-1" >
+                <li>
+                    <p class="corner">
+                    <button type="button" class="btn btn-outline-danger" style="border-radius: 50px/50px;">LOGIN</button>
+                    </p>
+                    </li>
+            </div>
+            <div class="col-sm-1" >
+                <li>
+                    <p class="corner">
+                        <button type="button" class="btn btn-danger" style="border-radius: 50px/50px;">SIGNUP</button>
+                    </p>
+                    </li>
+            </div>
+                 </div>
+            </div>
+        </ul>
+    </ul>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+<li>
+    <div class="container">
+<div class="col-sm-1" >
+     <p class="corner">
+     <button type="button" class="btn btn-danger"  data-toggle="modal" data-target="#myModal" style="border-radius: 50px/50px;">SIGNUP</button>
+      <div class="modal" id="myModal">
+       <div class="modal-dialog">
+        <div class="modal-content">
+                
+                  <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="text-primary">SIGNUP</h4>
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+           </div>
+                  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <form class="form-horizontal">
+                      <h6>Enter Username:</h6>
+                      <div class="form-group input-group">
+                        <input type="username" class="form-control" name="username" placeholder="Enter Username..">
+                      </div>
+                      <h6>Enter Email Address:</h6>
+                      <div class="form-group input-group">
+                      <input type="email" class="form-control" name="email" placeholder="Enter email..">
+                      </div>
+                      <h6>Enter Password:</h6>
+                      <div class="form-group input-group">
+                        <input type="password" class="form-control" name="password" placeholder="Enter password..">
+                      </div>
+                      <div class="modal-footer justify-content-center">
+                        <button class="btn btn-primary">Signup</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </p>
+      </div>
+    </div>
+        </li>
+
+
+
+
+
+
+
+        <li>
+            <div class="container">
+          <div class="col-sm-1" >
+            <p class="corner">
+                  <button type="button" class="btn btn-outline-danger"  data-toggle="modal" data-target="#myModal" style="border-radius: 50px/50px;">LOGIN</button>
+              
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">LOGIN</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <form class="form-horizontal">
+                        <h6>Enter Email Address:</h6>
+                        <div class="form-group input-group">
+                        <input type="name" class="form-control" name="email" placeholder="Enter email..">
+                        </div>
+                        <h6>Enter Password:</h6>
+                        <div class="form-group input-group">
+                          <input type="password" class="form-control" name="password" placeholder="Enter password..">
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <input type="checkbox">
+                            Remember me
+                          </label>
+                        </div>
+                        <div class="form-group">
+                          <button class="btn btn-primary">Login</button>
+                        </div>
+                          <div class="form-group" style="padding-bottom: 10px;">
+                          <a href="#">Forget Password?</a>
+                        </div>
+                      </form>
+                    </div>
+              </div>
+            </div>
+          </div>
+            </p>
+            </div>
+              </div>
+            </li>  
+    
+            <li>
+              <div class="container">
+            <div class="col-sm-1" >
+              <p class="corner">
+                    <button type="button" class="btn btn-danger"  data-toggle="modal" data-target="#myModal" style="border-radius: 50px/50px;">SIGNUP</button>
+                
+                <div class="modal" id="myModal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                    
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">SIGNUP</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        <form class="form-horizontal">
+                          <h6>Enter Email Address:</h6>
+                          <div class="form-group input-group">
+                          <input type="name" class="form-control" name="email" placeholder="Enter email..">
+                          </div>
+                          <h6>Enter Password:</h6>
+                          <div class="form-group input-group">
+                            <input type="password" class="form-control" name="password" placeholder="Enter password..">
+                          </div>
+                          <div class="form-group">
+                            <button class="btn btn-primary">Signup</button>
+                          </div>
+                            <div class="form-group" style="padding-bottom: 10px;">
+                            <a href="#">Forget Password?</a>
+                          </div>
+                        </form>
+                      </div>
+                </div>
+              </div>
+            </div>
+              </p>
+              </div>
+            </div>
+              </li>  
+    
+
+              .bg{
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                top: -35px;
+                left: 40%;
+                }
+
+
+
+
+                var exampleInputFirstname=getElementById("text").value;
+    localStorage.setItem("exampleInputFirstname",exampleInputFirstname);
+    return false;
+    var exampleInputFirstname=getElementById("text").value;
+    localStorage.setItem("exampleInputEmail",exampleInputEmail);
+    return false;
+    var exampleInputFirstname=getElementById("text").value;
+    localStorage.setItem("exampleInputNumber",exampleInputNumber);
+    return false;
+
+
+
+    <script type="text/javascript">
+      function validation()
+      {
+          var firstname = document.getElementById("inputFirstname");
+          var lastname = document.getElementById("inputLastname");
+          var number = document.getElementById("inputNumber");
+          var password = document.getElementById("inputPassword");
+      
+          if(firstname=="" || lastname=="" || number=="" || password=="")
+          {
+              document.getElementById("eresult").innerHTML= "All field required!";
+              return false;
+          }else if
+              (firstname.length<4){
+                  document.getElementById("eresult").innerHTML= "First Name must be Atleast 4 Characters!";
+                  return false;
+              }
+              else if
+              (lastname.length<4){
+                  document.getElementById("eresult").innerHTML= "Last Name must be Atleast 4 Characters!";
+                  return false;
+              }
+              else if
+              (password.length<4){
+                  document.getElementById("eresult").innerHTML= "Password must be Atleast 4 Characters!";
+                  return false;
+              }
+              else if
+              (number.length<10){
+                  document.getElementById("eresult").innerHTML= "Number must be Atleast 10 Digits!";
+                  return false;
+              }else{
+                  return true;
+              }
+      }
+    </script>
+
+<script>
+function validation()
+{
+    var firstname = document.getElementById("inputFirstname");
+    var lastname = document.getElementById("inputLastname");
+    var number = document.getElementById("inputNumber");
+    var password = document.getElementById("inputPassword");
+
+    if(firstname.value.trim()=="" || lastname.value.trim()=="" || number.value.trim()=="" || password.value.trim()=="")
+    {
+        alert("All field required!");
+        return false;
+    }else if
+        (firstname.length.trim()<4){
+            alert("First Name must be Atleast 4 Characters!") ;
+            return false;
+        }
+        else if
+        (lastname.length.trim()<4){
+            alert ("Last Name must be Atleast 4 Characters!");
+            return false;
+        }
+        else if
+        (password.length.trim()<4){
+            alert("Password must be Atleast 4 Characters!");
+            return false;
+        }
+        else if
+        (number.length.trim()<10){
+           alert("Number must be Atleast 10 Digits!");
+            return false;
+        }else{
+            return true;
+        }
+}
+</script>
+
+
+
+<h3 style="padding-top: 10px;">User Details</h3>
+<section>
+  Firstname: <span id="result1"></span><br>
+  Email: <span id="result2"></span><br>
+  Number: <span id="result3"></span>
+</section>
+
+
+<script>
+document.getElementById("result1").innerHTML=localStorage.getItem("inputFirstname");
+document.getElementById("result2").innerHTML=localStorage.getItem("inputEmail");
+document.getElementById("result3").innerHTML=localStorage.getItem("inputNumber");
+</script>
+
+
+
+function myFunction(){
+
+  var details = [];
+  const addDetail = (ev)=>{
+      ev.preventDefault();  //to stop the form submitting
+      var detail = {
+        fname: document.getElementById('inputFirstname').value,
+        lname: document.getElementById('inputLastname').value,
+          email: document.getElementById('inputEmail').value,
+          number: document.getElementById('inputNumber').value,
+          password: document.getElementById('inputPassword').value
+      }
+      details.push(detail);
+       // to clear the form for the next entries
+      document.forms[0].reset();
+  
+      //for display purposes only
+     // console.warn('added' , {details} );
+     // var pre = document.querySelector('#msg pre');
+     // pre.textContent = '\n' + JSON.stringify(movies, '\t', 3);
+  
+      //saving to localStorage
+      localStorage.setItem('MyList', JSON.stringify(details) );
+  }
+  
+  document.addEventListener('DOMContentLoaded', ()=>{
+     document.getElementById('btn').addEventListener('click', addDetail);
+  });
+  }
+
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SignUp Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+<style>
+    .header{
+        background: rgb(58,58,58);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    body{
+        padding-top: 10px;
+        
+    }
+    
+    .form-container{
+      border-radius: 10px;
+      
+      padding: 35px;
+      box-shadow: 0px 10px 0px 0px;
+      height: 500px;
+     
+      background: whitesmoke;
+    }
+   
+    
+</style>
+</head>
+<body>
+  
+    <div class="container-fluid">
+      
+      <div class="header" class="nav nav-tabs">
+        <ul class="nav justify-content-end" class="nav nav-tabs" style="padding-top: 25px;">
+            <li class="nav-item">
+                <a class="nav-link" href="localstorage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signup.html">Signup</a>
+              </li>
+        </ul>
+    </div>
+  </div>
+    
+       <div style="padding-top: 20px;">
+        <section class="container-fluid">
+          <section class="row justify-content-center">
+            <section class="col-lg-5 m-auto d-block">
+              
+              <form class="form-container" action="#" onsubmit="return validation()">
+               
+                <h3 class="text-center" style="padding-bottom: 10px;">Sign Up</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="inputFirstname" placeholder="Firstname" autocomplete="off">
+                    <span id="Fname" class="text-danger"></span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                 <div class="form-group">
+                    <input type="text" class="form-control" id="inputLastname" placeholder="Lastname" autocomplete="off">
+                    <span id="Lname" class="text-danger"></span>
+                  </div>
+                </div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email" autocomplete="off">
+                  <span id="em" class="text-danger"></span>
+                </div>
+               <div class="form-group">
+                <input type="number" class="form-control" id="inputNumber" placeholder="Phone Number">
+                <span id="num" class="text-danger"></span>
+              </div>
+               <div class="form-group" style="padding-bottom: 5px;">
+               <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+               <span id="pass" class="text-danger"></span>
+              </div>
+              <div class="form-group form-check">
+                
+                <label style="padding-top: 2px;">
+                  <input type="checkbox" >
+                  I accept the <a href="#">Terms & Conditions</a>
+                </label>
+              </div>
+             <div style="padding-top: 0px;">
+              <button type="submit" class="btn btn-primary" name="submit">SignUp</button>
+            </div>
+          
+              </form>
+           
+            </section>
+          </section>
+        </section>
+        
+      </div>
+    </div>
+
+
+<script type="text/javascript" language="javascript" src="login.js"></script>
+
+ 
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+/*  let key,userPsw,user;
+function check()
+{
+    
+   // key=document.getElementById('inputEmail').value;
+    //user = JSON.parse(localStorage.getItem(key));
+ //   userPsw = document.getElementById('exampleInputPassword');
+    //if((detail.fname!= "" )&& (detail.lname!= "") && (detail.email!= "") && (detail.number!= "") && (detail.password!= ""))
+    //{
+      user = JSON.parse(localStorage.getItem(key));
+   console.log(user);
+     if(user){
+        if(user.password == userPsw)
+        {
+          alert("Login successfully");
+          document.location("homepage.html");
+        }
+        else{
+         alert("error");
+        }
+    }
+}*/
+//}
+
+
+
+
+
+
+
+
+
+
+/*let key,detail,user;
+function store()
+{ 
+  key=document.getElementById('inputEmail').value;
+  
+  detail = {
+          fname: document.getElementById('inputFirstname').value,
+          lname: document.getElementById('inputLastname').value,
+          email: document.getElementById('inputEmail').value,
+          number: document.getElementById('inputNumber').value,
+          password: document.getElementById('inputPassword').value
+    }
+
+    if((detail.fname!= "" )&& (detail.lname!= "") && (detail.email!= "") && (detail.number!= "") && (detail.password!= ""))
+        {
+          user = JSON.parse(localStorage.getItem(key));
+       console.log(user);
+         if(user){
+            
+            alert("account already exists");
+          }
+          else{
+            //localStorage.setItem('key', JSON.stringify(key));
+            //alert("please signup");
+            localStorage.setItem(key, JSON.stringify(key));
+            alert("account created");
+          }
+        
+    }
+   
+  
+  }*/
+
+
+  <form name="f1" style="padding-bottom: 20px;">
+    <input type="text" name="t1" value="" readonly="" />
+    <input type="button" name="b1" onclick="fun1()" value="Refresh" />
+</form>
+
+
+function fun1()
+{
+  var no = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+  var x = no[Math.floor(Math.random()* no.length)];
+  for(var i=0; i<6;i++){
+      x = x +  no[Math.floor(Math.random()* no.length)];
+  }
+  f1.t1.value = x;
+}
+//window.onload= fun1;
+
+
+
+
+
+<head>
+  <title>Login Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styling.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+      input[type="text"]
+      {
+        position: relative;
+        height: 40px;
+        width: 150px;
+        background: #fff;
+       
+        left: 22%;
+        transform: translateX(-50%);
+        color: royalblue;
+        outline: none;
+        font-size: 35px;
+        
+      }
+      input[type="button"]
+      {
+        
+        height: 25px;
+        font-size: small;
+      }
+
+  </style>
+
+</head>
+<script type="text/javascript">
+function fun1()
+  {
+    var no = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    var x = no[Math.floor(Math.random()* no.length)];
+    for(var i=0; i<6;i++){
+        x = x +  no[Math.floor(Math.random()* no.length)];
+    }
+    f1.t1.value = x;
+  }
+  window.onload = fun1;
+  document.getElementById('mainCaptcha').value= x;
+  </script>
+  <body>
+      <form name="f1" style="padding-bottom: 20px;">
+          <input type="text" name="t1" id="mainCaptcha" value="" readonly="" />
+          <input type="button" name="b1" onclick="fun1()" value="Refresh" />
+      </form>
+      <div>
+          <textarea id="div1" style="height: 40px; padding-bottom: 10px;"></textarea>
+      </div>
+  </body>
+  </html>
+
+
+
